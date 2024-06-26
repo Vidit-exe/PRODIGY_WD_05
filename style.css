@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: lightblue;
+    height: 100vh;
+    nav {
+        margin: 0;
+        padding: 30px;
+        background-color: blue;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title{
+            img{
+                cursor: pointer;
+            }
+        }
+
+        .quote {
+            span {
+                color: white;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: 700;
+                font-size: 25px;
+            }
+        }
+
+        .searchbar{
+            position: relative;
+            max-width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            input{
+                width: 250px;
+                padding: 20px;
+                outline: 0;
+                border: 0;
+                border-radius: 15px;
+            }
+
+            input::placeholder{
+                font-size: 16px;
+                font-weight: 500;
+                color: lightgreen;
+            }
+            button{
+                padding: 10px;
+                margin: 0 auto 0 -90px;
+                cursor: pointer;
+                outline: 0;
+                border: 0;
+                border-radius: 20px;
+                background-color: cornflowerblue;
+                color: white;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.city-name{
+    text-align: center;
+    margin: 25px 0;
+}
+
+.weather-forecast{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+    li{
+        border: 1px solid grey;
+        padding: 10px;
+        border-width: 0.5px;
+        color: black;
+        font-weight: 700;
+        span{
+            color: red;
+        }
+    }
+}

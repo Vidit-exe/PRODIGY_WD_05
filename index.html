@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="/Photos/cloudy.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="title">
+                <img src="/Photos/weather.png" height="50" width="50" alt="">
+            </div>
+            <div class="quote">
+                <span>"Search for the weather of your city"</span>
+            </div>
+            <div class="searchbar">
+                <input id="city" type="text" placeholder="Search The City">
+                <button type="submit" id="submit">Search</button>
+            </div>
+        </nav>
+        <div class="city-name">
+            <h1>Weather For <span id="cityName"></span></h1>
+        </div>
+        <div class="weather-forecast">
+            <li>The Cloud PCT is <span id="cloud_pct"></span></li>
+            <li>The Temperature is <span id="temp"></span></li>
+            <li>Feels like <span id="feels_like"></span></li>
+            <li>Humidity: <span id="humidity"></span></li>
+            <li>Minimum Temperature is <span id="min_temp"></span></li>
+            <li>Maximum Temperature is <span id="max_temp"></span></li>
+            <li>Wind Speed is <span id="wind_speed"></span></li>
+            <li>Wind Degrees are <span id="wind_degrees"></span></li>
+            <li>Sunrise: <span id="sunrise"></span></li>
+            <li>Sunset: <span id="sunset"></span></li>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
